@@ -8,10 +8,10 @@ import time
 from quadT import QuadTree,Rectangle
 
 L=1
-K_r=10
-K_s=10
+K_r=2
+K_s=20
 delta_t=0.1
-N=15 #nodes counts
+N=20 #nodes counts
 maxsqua=2
 
 boundary=Rectangle(200,200,200,200)
@@ -34,7 +34,7 @@ fixed_pos =dict(zip(t1,t2)) #set fixed layout location
 for i in range(N):
     rx=random.uniform(0,25)
     ry=random.uniform(0,25)
-    edges=random.randint(1,4) #randomly add edges 
+    edges=random.randint(1,3) #randomly add edges 
     rn=[]
     for j in range(edges):
         rn.append(random.randint(0,N-1))
